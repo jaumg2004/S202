@@ -1,0 +1,21 @@
+[{
+  "aula1":{
+    "sigla": "C206",
+    "nomeProfessor": "Chris Lima",
+    "assunto": "Programação Orientada a Objetos com Java",
+    "alunos": ["Paulo Pivoto", "Miguel Corales", "Rodrigo Armengol", "João Gabriel"]
+  },
+
+  "aula2":{
+    "sigla": "C14",
+    "nomeProfessor": "Chris Lima",
+    "assunto": "Engenharia de Software",
+    "alunos": ["Paulo Pivoto", "Miguel Corales", "Rodrigo Armengol", "João Gabriel"]
+  },
+  "aula3":{
+    "sigla": "C11",
+    "nomeProfessor": "Renzo Mesquita",
+    "assunto": "Ciencia de Dados com Python",
+    "alunos": ["Paulo Pivoto", "Miguel Corales", "Rodrigo Armengol", "João Gabriel"]
+  }
+}]
