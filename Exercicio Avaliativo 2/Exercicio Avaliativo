@@ -1,0 +1,22 @@
+#Criação de Nós com múltiplos Labels e Propriedades
+
+CREATE (p1:Pessoa:Engenheiro {nome: 'João', sexo: 'M', idade: 45})
+CREATE (p2:Pessoa:Medico {nome: 'Maria', sexo: 'F', idade: 43})
+CREATE (p3:Pessoa:Estudante {nome: 'Ana', sexo: 'F', idade: 18})
+CREATE (p4:Pessoa:Advogado {nome: 'Carlos', sexo: 'M', idade: 50})
+CREATE (p5:Pessoa:Aposentado {nome: 'Jorge', sexo: 'M', idade: 70})
+CREATE (p6:Pessoa:Professor {nome: 'Lucia', sexo: 'F', idade: 38})
+CREATE (p7:Pessoa:Engenheiro {nome: 'Paulo', sexo: 'M', idade: 28})
+CREATE (p8:Pet:Cachorro {nome: 'Rex', sexo: 'M', idade: 5})
+CREATE (p9:Pet:Gato {nome: 'Mimi', sexo: 'F', idade: 3})
+CREATE (p10:Pessoa:Aposentado {nome: 'Francisco', sexo: 'M', idade: 65})
+
+#Criação dos Relacionamentos com Propriedades
+
+CREATE (p1)-[:PAI_DE {desde: 2000}]->(p3)
+CREATE (p2)-[:MAE_DE {desde: 2000}]->(p3)
+CREATE (p2)-[:ESPOSO_DE {desde: 1998}]->(p1)
+CREATE (p6)-[:IRMAO_DE]->(p2)
+CREATE (p5)-[:AVO_DE]->(p3)
+CREATE (p7)-[:DONO_DE]->(p8)
+CREATE (p9)-[:AMIGO_DE]->(p10)
